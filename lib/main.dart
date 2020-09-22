@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   final _formKey = GlobalKey<FormState>();
   RegExp numvalid = RegExp(r'^[+]*[(]{0,1}[0-9]{1,4}[)]{0,1}[-\s\./0-9]*$');
-  RegExp mailvalid = RegExp(r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
+  RegExp mailvalid = RegExp(r'^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()11[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$');
 
   TextEditingController name = TextEditingController();
 
@@ -97,7 +97,7 @@ class _MyAppState extends State<MyApp> {
                     Expanded(
                       child: Container(
                         width: 50,
-                        margin: EdgeInsets.only(left: 20, top: 16),
+                        margin: EdgeInsets.only(left: 20),
                         child: DropdownButton(
                           hint: Text("Area"),
                             value: area,
